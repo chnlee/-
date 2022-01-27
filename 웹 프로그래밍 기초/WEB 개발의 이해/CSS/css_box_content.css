@@ -1,0 +1,16 @@
+div {
+  width:100px;
+  height:100px;
+  border:1px solid red;
+  padding:10px 0px 1px 5px;
+  /* padding값을 상좌하우 순으로 크기를 설정하는 것이 가능하다.
+   */  font-size:0.8em;
+}
+
+.box-content {
+  1box-sizing:content-box; 
+}
+
+.box-border {
+  box-sizing:border-box;
+}
