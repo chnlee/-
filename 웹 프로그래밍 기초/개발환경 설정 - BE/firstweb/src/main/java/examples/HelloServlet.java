@@ -27,6 +27,9 @@ public class HelloServlet extends HttpServlet {
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
+        // response 클래스에서 setContentType 호출(text.html 불러오기)
+        // PrintWriter 호출 = response 에서 getWriter() 호출
+        // print 함수 호출(PrintWriter에 속한 print)
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html;charset=UTF-8");
 		PrintWriter out = response.getWriter();
